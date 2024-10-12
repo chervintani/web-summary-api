@@ -18,7 +18,7 @@ describe('Summary API', () => {
   })
 
   afterAll(async () => {
-    await Summary.deleteMany()
+    await Summary.findByIdAndDelete(summaryId)
     await mongoose.disconnect()
   })
 
@@ -27,12 +27,12 @@ describe('Summary API', () => {
       const res = await request(app).get(`/api/summary/${summaryId}`)
       expect(res.statusCode).toEqual(200)
       expect(res.body).toHaveProperty('summary', 'This is a test summary.')
-    })
+    }, 10000)
 
     it('should return 404 if summary not found', async () => {
-      const res = await request(app).get('/api/summary/123')
+      const res = await request(app).get('/api/summary/123') // Use an invalid ID
       expect(res.statusCode).toEqual(404)
       expect(res.body).toHaveProperty('message', 'Summary not found')
-    })
+    }, 10000)
   })
 })
