@@ -34,6 +34,15 @@ The project consists of a web service built using Node.js and Express. It allows
 - ### AI Integration:
   - OpenAI's API was integrated for summarization, providing a reliable way to generate high-quality summaries without requiring extensive machine learning expertise.
 
+## API Requests Examples
+
+### 1. Request a new job to summarize website
+Endpoint: `http://localhost:3000/api/summary?url=<url>`
+
+### 2. Request to get website summary by ID
+Endpoint: `http://localhost:3000/api/summary/<id>`
+
+
 ## My Insights
 
 ### How I Approach the Problem
