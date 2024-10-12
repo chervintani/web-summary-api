@@ -42,11 +42,9 @@ export const createSummary = async (req, res) => {
   try {
     const existingSummary = await Summary.findOne({ url })
     if (existingSummary) {
-      return res
-        .status(409)
-        .json({
-          message: `${url} already processed with an id ${existingSummary.id}`
-        })
+      return res.status(409).json({
+        message: `${url} already processed with an id ${existingSummary.id}`
+      })
     }
 
     const summaryData = await Summary.create({ url, status: 'pending' })
@@ -69,7 +67,7 @@ export const getSummaryById = async (req, res) => {
     }
     res.json(summary.toJSON())
   } catch (error) {
-    console.error("Error getting summary:", error)
+    console.error('Error getting summary:', error)
     res.status(500).json({ message: 'Internal Server Error' })
   }
 }
