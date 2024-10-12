@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1728719238052" clover="3.2.0">
-  <project timestamp="1728719238052" name="All files">
-    <metrics statements="193" coveredstatements="105" conditionals="53" coveredconditionals="35" methods="52" coveredmethods="18" elements="298" coveredelements="158" complexity="0" loc="193" ncloc="193" packages="5" files="6" classes="6"/>
+<coverage generated="1728721197747" clover="3.2.0">
+  <project timestamp="1728721197747" name="All files">
+    <metrics statements="193" coveredstatements="93" conditionals="38" coveredconditionals="21" methods="49" coveredmethods="12" elements="280" coveredelements="126" complexity="0" loc="193" ncloc="193" packages="5" files="6" classes="6"/>
     <package name="web-summary-api">
       <metrics statements="33" coveredstatements="24" conditionals="3" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <file name="server.js" path="C:\Users\tanil\Documents\Dev\web-summary-api\server.js">
@@ -42,11 +42,11 @@
       </file>
     </package>
     <package name="web-summary-api.controllers">
-      <metrics statements="70" coveredstatements="26" conditionals="18" coveredconditionals="17" methods="8" coveredmethods="6"/>
+      <metrics statements="70" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="1"/>
       <file name="summaryController.js" path="C:\Users\tanil\Documents\Dev\web-summary-api\controllers\summaryController.js">
-        <metrics statements="70" coveredstatements="26" conditionals="18" coveredconditionals="17" methods="8" coveredmethods="6"/>
+        <metrics statements="70" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="cond" truecount="8" falsecount="1"/>
+        <line num="2" count="0" type="cond" truecount="1" falsecount="0"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -104,23 +104,23 @@
         <line num="57" count="1" type="stmt"/>
         <line num="58" count="1" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
-        <line num="60" count="1" type="cond" truecount="5" falsecount="0"/>
-        <line num="61" count="2" type="stmt"/>
-        <line num="62" count="2" type="stmt"/>
-        <line num="63" count="2" type="stmt"/>
-        <line num="64" count="2" type="stmt"/>
-        <line num="65" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="66" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="67" count="1" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
+        <line num="60" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
         <line num="69" count="1" type="stmt"/>
         <line num="70" count="1" type="stmt"/>
       </file>
     </package>
     <package name="web-summary-api.models">
-      <metrics statements="20" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="20" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="Summary.js" path="C:\Users\tanil\Documents\Dev\web-summary-api\models\Summary.js">
-        <metrics statements="20" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="20" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -134,10 +134,10 @@
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
@@ -167,12 +167,12 @@
       <file name="openAiService.js" path="C:\Users\tanil\Documents\Dev\web-summary-api\services\openAiService.js">
         <metrics statements="30" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
