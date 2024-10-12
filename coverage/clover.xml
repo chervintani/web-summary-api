@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1728718128785" clover="3.2.0">
-  <project timestamp="1728718128786" name="All files">
-    <metrics statements="197" coveredstatements="107" conditionals="53" coveredconditionals="35" methods="52" coveredmethods="18" elements="302" coveredelements="160" complexity="0" loc="197" ncloc="197" packages="5" files="6" classes="6"/>
+<coverage generated="1728718533183" clover="3.2.0">
+  <project timestamp="1728718533183" name="All files">
+    <metrics statements="193" coveredstatements="105" conditionals="53" coveredconditionals="35" methods="52" coveredmethods="18" elements="298" coveredelements="158" complexity="0" loc="193" ncloc="193" packages="5" files="6" classes="6"/>
     <package name="web-summary-api">
       <metrics statements="33" coveredstatements="24" conditionals="3" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <file name="server.js" path="C:\Users\tanil\Documents\Dev\web-summary-api\server.js">
@@ -42,9 +42,9 @@
       </file>
     </package>
     <package name="web-summary-api.controllers">
-      <metrics statements="72" coveredstatements="26" conditionals="18" coveredconditionals="17" methods="8" coveredmethods="6"/>
+      <metrics statements="70" coveredstatements="26" conditionals="18" coveredconditionals="17" methods="8" coveredmethods="6"/>
       <file name="summaryController.js" path="C:\Users\tanil\Documents\Dev\web-summary-api\controllers\summaryController.js">
-        <metrics statements="72" coveredstatements="26" conditionals="18" coveredconditionals="17" methods="8" coveredmethods="6"/>
+        <metrics statements="70" coveredstatements="26" conditionals="18" coveredconditionals="17" methods="8" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="cond" truecount="8" falsecount="1"/>
         <line num="3" count="1" type="stmt"/>
@@ -101,22 +101,20 @@
         <line num="54" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
         <line num="56" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="62" count="1" type="cond" truecount="5" falsecount="0"/>
+        <line num="60" count="1" type="cond" truecount="5" falsecount="0"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
         <line num="63" count="2" type="stmt"/>
         <line num="64" count="2" type="stmt"/>
-        <line num="65" count="2" type="stmt"/>
-        <line num="66" count="2" type="stmt"/>
-        <line num="67" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="68" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="65" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="66" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
         <line num="69" count="1" type="stmt"/>
         <line num="70" count="1" type="stmt"/>
-        <line num="71" count="1" type="stmt"/>
-        <line num="72" count="1" type="stmt"/>
       </file>
     </package>
     <package name="web-summary-api.models">
@@ -146,9 +144,9 @@
       </file>
     </package>
     <package name="web-summary-api.routes">
-      <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="summaryRoutes.js" path="C:\Users\tanil\Documents\Dev\web-summary-api\routes\summaryRoutes.js">
-        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -162,8 +160,6 @@
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
       </file>
     </package>
     <package name="web-summary-api.services">

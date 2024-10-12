@@ -16,7 +16,6 @@ const getWebsiteSummary = async (url) => {
     // Extract the first paragraph of content (if present)
     const firstParagraph = $('p').first().text() || 'No content found'
 
-    // Return the summary as an object
     return {
       title,
       description,

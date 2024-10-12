@@ -26,9 +26,9 @@
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">36.11% </span>
+            <span class="strong">37.14% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">26/72</span>
+            <span class="fraction">26/70</span>
           </div>
 
           <div class="fl pad1y space-right2">
@@ -44,9 +44,9 @@
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">36.11% </span>
+            <span class="strong">37.14% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">26/72</span>
+            <span class="fraction">26/70</span>
           </div>
         </div>
         <p class="quiet">
@@ -132,9 +132,7 @@
 <a name='L68'></a><a href='#L68'>68</a>
 <a name='L69'></a><a href='#L69'>69</a>
 <a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -169,8 +167,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -250,11 +246,9 @@ export const createSummary = <span class="fstat-no" title="function not covered"
 <span class="cstat-no" title="statement not covered" >  try {</span>
 <span class="cstat-no" title="statement not covered" >    const existingSummary = await Summary.findOne({ url })</span>
 <span class="cstat-no" title="statement not covered" >    if (existingSummary) {</span>
-<span class="cstat-no" title="statement not covered" >      return res</span>
-<span class="cstat-no" title="statement not covered" >        .status(409)</span>
-<span class="cstat-no" title="statement not covered" >        .json({</span>
-<span class="cstat-no" title="statement not covered" >          message: `${url} already processed with an id ${existingSummary.id}`</span>
-<span class="cstat-no" title="statement not covered" >        })</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(409).json({</span>
+<span class="cstat-no" title="statement not covered" >        message: `${url} already processed with an id ${existingSummary.id}`</span>
+<span class="cstat-no" title="statement not covered" >      })</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    const summaryData = await Summary.create({ url, status: 'pending' })</span>
@@ -274,7 +268,7 @@ export const getSummaryById = async (req, res) =&gt; {
     const summary = await Summary.findById(id)
     res.json(summary.toJSON())
   } catch (error) {
-    console.error("Error getting summary:", error)
+    console.error('Error getting summary:', error)
     res.status(404).json({ message: 'Summary not found' })
   }
 }
@@ -292,7 +286,7 @@ export const getSummaryById = async (req, res) =&gt; {
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2024-10-12T07:28:48.746Z
+      at 2024-10-12T07:35:33.145Z
     </div>
     <script src="../../prettify.js"></script>
     <script>
