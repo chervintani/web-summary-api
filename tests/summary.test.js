@@ -7,7 +7,7 @@ describe('Summary API', () => {
   let summaryId
 
   beforeAll(async () => {
-    await mongoose.connect(process.env.MONGO_URI, { dbName: 'website_scraper' })
+    await mongoose.connect("mongodb+srv://tanilonchervin:wyoOypHqoJfrnClQ@cluster0.r5kog.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { dbName: 'website_scraper' })
 
     const summary = await Summary.create({
       url: 'http://example.com',
