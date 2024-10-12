@@ -37,10 +37,10 @@ The project consists of a web service built using Node.js and Express. It allows
 ## API Requests Examples
 
 ### 1. Request a new job to summarize website
-Endpoint: `http://localhost:3000/api/summary?url=<url>`
+Endpoint: `POST` `http://localhost:3000/api/summary?url=<url>`
 
 ### 2. Request to get website summary by ID
-Endpoint: `http://localhost:3000/api/summary/<id>`
+Endpoint: `GET` `http://localhost:3000/api/summary/<id>`
 
 
 ## My Insights
