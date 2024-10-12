@@ -15,12 +15,12 @@ describe('Summary API', () => {
       summary: 'This is a test summary.'
     })
     summaryId = summary._id
-  })
+  }, 10000)
 
   afterAll(async () => {
     await Summary.findByIdAndDelete(summaryId)
     await mongoose.disconnect()
-  })
+  }, 10000)
 
   describe('GET /api/summary/:id', () => {
     it('should return the summary by ID', async () => {
