@@ -32,6 +32,10 @@ jobs:
     name: Run Jest Tests
     runs-on: ubuntu-latest
 
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      MONGO_URI: ${{ secrets.MONGO_URI }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -45,7 +49,4 @@ jobs:
         run: npm install
 
       - name: Run Jest
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          MONGO_URI: ${{ secrets.MONGO_URI }}
         run: npm run test
