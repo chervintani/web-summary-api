@@ -62,12 +62,9 @@ export const getSummaryById = async (req, res) => {
 
   try {
     const summary = await Summary.findById(id)
-    if (!summary) {
-      return res.status(404).json({ message: 'Summary not found' })
-    }
     res.json(summary.toJSON())
   } catch (error) {
     console.error('Error getting summary:', error)
-    res.status(500).json({ message: 'Internal Server Error' })
+    res.status(404).json({ message: 'Summary not found' })
   }
 }

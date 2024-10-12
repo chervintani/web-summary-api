@@ -47,5 +47,5 @@ jobs:
       - name: Run Jest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          MONGO_URI: ${{ secrets.MONGO_URI }} 
+          MONGO_URI: ${{ secrets.MONGO_URI }}
         run: npm run test
